@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Patient Monitoring</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Healthcare Patient Monitoring</h1>
+
+<div class="form-container">
+  <input type="text" id="name" placeholder="Patient Name">
+  <input type="number" id="age" placeholder="Age">
+  <input type="number" id="systolic" placeholder="Systolic BP">
+  <input type="number" id="diastolic" placeholder="Diastolic BP">
+  <input type="number" id="heartRate" placeholder="Heart Rate">
+  <button onclick="addPatient()">Add Patient</button>
+</div>
+
+<h2>Patient Records</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>BP</th>
+      <th>Heart Rate</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="patientTable"></tbody>
+</table>
+
+<div id="alertBox" class="alert hidden"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
